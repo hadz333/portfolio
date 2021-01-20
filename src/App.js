@@ -63,6 +63,9 @@ function App() {
             Photoshop &nbsp; 50%
           </p>
           <p id="skillCategory" className="skillCategory50">
+            PHP  &nbsp; 50%
+          </p>
+          <p id="skillCategory" className="skillCategory50">
             WordPress &nbsp; 50%
           </p>
           <p id="skillCategory" className="skillCategory60">
@@ -80,7 +83,7 @@ function App() {
           <a href="https://gifshr.herokuapp.com/" id="siteButton" target="_blank" rel="noreferrer">View site</a>
           <br /><br />
           <img src={path.join(process.env.PUBLIC_URL, '/gifshr2.png')} alt="gifshr" id="gifshrImage" />
-          <br /><br />
+          <br />More projects coming soon.<br />
 
         </div>
         <div id="links" style={{textAlign: 'left', marginBottom: '40px'}}>
