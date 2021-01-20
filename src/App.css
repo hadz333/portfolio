@@ -2,19 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#particles {
+  z-index: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +19,103 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p, #landingButton {
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#landingButton {
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+#landingButton:hover {
+  background: #007ba1;
+}
+
+#about {
+  min-height: 100vh;
+  background: #dce2e3;
+  color: #666b68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+#skills {
+  text-align: left;
+  width: calc(10px + 80vmin);
+  color: #dce2e3;
+}
+
+#skillCategory {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.skillCategory90 {
+  background: linear-gradient(to right, #007ba1 0%, #18c4de 90%, #000000 90%, #c0c2c1 90%, #c0c2c1 100%);
+}
+
+.skillCategory80 {
+  background: linear-gradient(to right, #007ba1 0%, #18c4de 80%, #000000 80%, #c0c2c1 80%, #c0c2c1 100%);
+}
+
+.skillCategory70 {
+  background: linear-gradient(to right, #007ba1 0%, #18c4de 70%, #000000 70%, #c0c2c1 70%, #c0c2c1 100%);
+}
+.skillCategory60 {
+  background: linear-gradient(to right, #007ba1 0%, #18c4de 60%, #000000 60%, #c0c2c1 60%, #c0c2c1 100%);
+}
+.skillCategory50 {
+  background: linear-gradient(to right, #007ba1 0%, #18c4de 50%, #000000 50%, #c0c2c1 50%, #c0c2c1 100%);
+}
+
+.socialLink {
+  color: #666b68;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  color: #18c4de;
+}
+
+#siteButton {
+  border: 2px solid white;
+  background: #007ba1;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+#siteButton:hover {
+  background: #18c4de;
+}
+
+#gifshrImage {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+@media (min-width: 700px) {
+  #gifshrImage {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1200px) {
+  #gifshrImage {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1600px) {
+  #gifshrImage {
+    width: 50%;
   }
 }
